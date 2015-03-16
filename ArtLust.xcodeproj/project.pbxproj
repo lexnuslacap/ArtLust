@@ -15,6 +15,7 @@
 		D74D73341AB6C3580045C294 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D74D73331AB6C3580045C294 /* Images.xcassets */; };
 		D74D73371AB6C3580045C294 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D74D73351AB6C3580045C294 /* LaunchScreen.xib */; };
 		D74D73431AB6C3580045C294 /* ArtLustTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D74D73421AB6C3580045C294 /* ArtLustTests.m */; };
+		D74D734D1AB6C4AD0045C294 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D74D734C1AB6C4AD0045C294 /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,7 @@
 		D74D733C1AB6C3580045C294 /* ArtLustTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ArtLustTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D74D73411AB6C3580045C294 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D74D73421AB6C3580045C294 /* ArtLustTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ArtLustTests.m; sourceTree = "<group>"; };
+		D74D734C1AB6C4AD0045C294 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 				D74D73331AB6C3580045C294 /* Images.xcassets */,
 				D74D73351AB6C3580045C294 /* LaunchScreen.xib */,
 				D74D73231AB6C3570045C294 /* Supporting Files */,
+				D74D734C1AB6C4AD0045C294 /* Localizable.strings */,
 			);
 			path = ArtLust;
 			sourceTree = "<group>";
@@ -205,6 +208,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D74D73321AB6C3580045C294 /* Main.storyboard in Resources */,
+				D74D734D1AB6C4AD0045C294 /* Localizable.strings in Resources */,
 				D74D73371AB6C3580045C294 /* LaunchScreen.xib in Resources */,
 				D74D73341AB6C3580045C294 /* Images.xcassets in Resources */,
 			);
