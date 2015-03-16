@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		112492E128CF90C2A53C24E2 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 25E34721B96881DB53FB2FE5 /* libPods.a */; };
+		D73C9FA61AB728FF007E1958 /* ArtLust.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D73C9FA41AB728FF007E1958 /* ArtLust.xcdatamodeld */; };
 		D74D73341AB6C3580045C294 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D74D73331AB6C3580045C294 /* Images.xcassets */; };
 		D74D73431AB6C3580045C294 /* ArtLustTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D74D73421AB6C3580045C294 /* ArtLustTests.m */; };
 		D74D73621AB6D1110045C294 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D74D734F1AB6D1110045C294 /* main.m */; };
@@ -33,6 +34,7 @@
 		25E34721B96881DB53FB2FE5 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		386B859DEDD0BB9D1855978A /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		B955703B79BD9E0F59BFDC65 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		D73C9FA51AB728FF007E1958 /* ArtLust.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ArtLust.xcdatamodel; sourceTree = "<group>"; };
 		D74D73201AB6C3560045C294 /* ArtLust.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ArtLust.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D74D73331AB6C3580045C294 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		D74D733C1AB6C3580045C294 /* ArtLustTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ArtLustTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -199,16 +201,19 @@
 		D74D735B1AB6D1110045C294 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				D73C9FA41AB728FF007E1958 /* ArtLust.xcdatamodeld */,
 			);
-			path = Model;
-			sourceTree = "<group>";
+			name = Model;
+			path = "/Users/edwardlacap/Documents/ios workspace/ArtLust/ArtLust/Shared/Model";
+			sourceTree = "<absolute>";
 		};
 		D74D735C1AB6D1110045C294 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = Utility;
-			sourceTree = "<group>";
+			name = Utility;
+			path = "/Users/edwardlacap/Documents/ios workspace/ArtLust/ArtLust/Shared/Utility";
+			sourceTree = "<absolute>";
 		};
 		D74D735D1AB6D1110045C294 /* Views */ = {
 			isa = PBXGroup;
@@ -370,6 +375,7 @@
 				D74D73641AB6D1110045C294 /* AppDelegate.m in Sources */,
 				D74D73651AB6D1110045C294 /* FirstViewController.m in Sources */,
 				D74D73621AB6D1110045C294 /* main.m in Sources */,
+				D73C9FA61AB728FF007E1958 /* ArtLust.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -513,6 +519,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "ArtLust/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -524,6 +531,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "ArtLust/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -594,6 +602,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		D73C9FA41AB728FF007E1958 /* ArtLust.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D73C9FA51AB728FF007E1958 /* ArtLust.xcdatamodel */,
+			);
+			currentVersion = D73C9FA51AB728FF007E1958 /* ArtLust.xcdatamodel */;
+			path = ArtLust.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = D74D73181AB6C3550045C294 /* Project object */;
 }
