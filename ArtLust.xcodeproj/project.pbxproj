@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		112492E128CF90C2A53C24E2 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 25E34721B96881DB53FB2FE5 /* libPods.a */; };
+		D703E3041AD036BE00A9CE42 /* ALObjectManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D703E3031AD036BE00A9CE42 /* ALObjectManager.m */; };
 		D73C9FA61AB728FF007E1958 /* ArtLust.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D73C9FA41AB728FF007E1958 /* ArtLust.xcdatamodeld */; };
 		D74D73341AB6C3580045C294 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D74D73331AB6C3580045C294 /* Images.xcassets */; };
 		D74D73431AB6C3580045C294 /* ArtLustTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D74D73421AB6C3580045C294 /* ArtLustTests.m */; };
@@ -34,6 +35,9 @@
 		25E34721B96881DB53FB2FE5 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		386B859DEDD0BB9D1855978A /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		B955703B79BD9E0F59BFDC65 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		D703E3021AD036BE00A9CE42 /* ALObjectManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALObjectManager.h; sourceTree = "<group>"; };
+		D703E3031AD036BE00A9CE42 /* ALObjectManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALObjectManager.m; sourceTree = "<group>"; };
+		D703E3051AD0394000A9CE42 /* ArtLust-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ArtLust-Prefix.pch"; sourceTree = "<group>"; };
 		D73C9FA51AB728FF007E1958 /* ArtLust.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ArtLust.xcdatamodel; sourceTree = "<group>"; };
 		D74D73201AB6C3560045C294 /* ArtLust.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ArtLust.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D74D73331AB6C3580045C294 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -99,6 +103,15 @@
 				25E34721B96881DB53FB2FE5 /* libPods.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D703E3011AD0362A00A9CE42 /* API Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				D703E3021AD036BE00A9CE42 /* ALObjectManager.h */,
+				D703E3031AD036BE00A9CE42 /* ALObjectManager.m */,
+			);
+			path = "API Helpers";
 			sourceTree = "<group>";
 		};
 		D74D73171AB6C3550045C294 = {
@@ -210,6 +223,7 @@
 		D74D735C1AB6D1110045C294 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				D703E3011AD0362A00A9CE42 /* API Helpers */,
 			);
 			name = Utility;
 			path = "/Users/edwardlacap/Documents/ios workspace/ArtLust/ArtLust/Shared/Utility";
@@ -228,6 +242,7 @@
 			isa = PBXGroup;
 			children = (
 				D74D73611AB6D1110045C294 /* Info.plist */,
+				D703E3051AD0394000A9CE42 /* ArtLust-Prefix.pch */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -372,6 +387,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D74D73661AB6D1110045C294 /* SecondViewController.m in Sources */,
+				D703E3041AD036BE00A9CE42 /* ALObjectManager.m in Sources */,
 				D74D73641AB6D1110045C294 /* AppDelegate.m in Sources */,
 				D74D73651AB6D1110045C294 /* FirstViewController.m in Sources */,
 				D74D73621AB6D1110045C294 /* main.m in Sources */,
@@ -518,6 +534,8 @@
 			baseConfigurationReference = 386B859DEDD0BB9D1855978A /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ArtLust/Supporting Files/ArtLust-Prefix.pch";
 				INFOPLIST_FILE = "ArtLust/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -530,6 +548,8 @@
 			baseConfigurationReference = B955703B79BD9E0F59BFDC65 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ArtLust/Supporting Files/ArtLust-Prefix.pch";
 				INFOPLIST_FILE = "ArtLust/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
