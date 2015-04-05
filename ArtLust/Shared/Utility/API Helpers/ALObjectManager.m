@@ -11,11 +11,11 @@
 @implementation ALObjectManager
 
 + (instancetype)sharedManager {
-    NSURL *url = [NSURL URLWithString:@""];
+    NSURL *url = [NSURL URLWithString:WEB_API_BASE_URL];
     
     ALObjectManager *sharedManager  = [self managerWithBaseURL:url];
     [sharedManager setRequestSerializationMIMEType:RKMIMETypeJSON];
-    
+    [[sharedManager HTTPClient] setDefaultHeader:@"X-ZUMO-APPLICATION" value:WEB_API_APPLICATION_KEY];
     /*
      THIS CLASS IS MAIN POINT FOR CUSTOMIZATION:
      - setup HTTP headers that should exist on all HTTP Requests

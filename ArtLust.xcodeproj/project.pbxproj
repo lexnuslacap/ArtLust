@@ -19,6 +19,9 @@
 		D74D736A1AB6D1300045C294 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D74D736C1AB6D1300045C294 /* Localizable.strings */; };
 		D74D73711AB6D2000045C294 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D74D73731AB6D2000045C294 /* LaunchScreen.xib */; };
 		D74D737C1AB6D2200045C294 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D74D737E1AB6D2200045C294 /* Main.storyboard */; };
+		D75B76661AD057B100CF24A0 /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = D75B76651AD057B100CF24A0 /* Constants.m */; };
+		D75B76691AD0DF4100CF24A0 /* ArtWorkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D75B76681AD0DF4100CF24A0 /* ArtWorkManager.m */; };
+		D75B766F1AD1455800CF24A0 /* ArtWork.m in Sources */ = {isa = PBXBuildFile; fileRef = D75B766E1AD1455800CF24A0 /* ArtWork.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +70,12 @@
 		D74D73821AB6D2240045C294 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Main.strings; sourceTree = "<group>"; };
 		D74D73841AB6D2250045C294 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Main.strings; sourceTree = "<group>"; };
 		D74D73861AB6D2280045C294 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Main.strings; sourceTree = "<group>"; };
+		D75B76641AD057B100CF24A0 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		D75B76651AD057B100CF24A0 /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
+		D75B76671AD0DF4100CF24A0 /* ArtWorkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArtWorkManager.h; sourceTree = "<group>"; };
+		D75B76681AD0DF4100CF24A0 /* ArtWorkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArtWorkManager.m; sourceTree = "<group>"; };
+		D75B766D1AD1455800CF24A0 /* ArtWork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArtWork.h; sourceTree = "<group>"; };
+		D75B766E1AD1455800CF24A0 /* ArtWork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArtWork.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +119,8 @@
 			children = (
 				D703E3021AD036BE00A9CE42 /* ALObjectManager.h */,
 				D703E3031AD036BE00A9CE42 /* ALObjectManager.m */,
+				D75B76671AD0DF4100CF24A0 /* ArtWorkManager.h */,
+				D75B76681AD0DF4100CF24A0 /* ArtWorkManager.m */,
 			);
 			path = "API Helpers";
 			sourceTree = "<group>";
@@ -215,6 +226,8 @@
 			isa = PBXGroup;
 			children = (
 				D73C9FA41AB728FF007E1958 /* ArtLust.xcdatamodeld */,
+				D75B766D1AD1455800CF24A0 /* ArtWork.h */,
+				D75B766E1AD1455800CF24A0 /* ArtWork.m */,
 			);
 			name = Model;
 			path = "/Users/edwardlacap/Documents/ios workspace/ArtLust/ArtLust/Shared/Model";
@@ -224,6 +237,8 @@
 			isa = PBXGroup;
 			children = (
 				D703E3011AD0362A00A9CE42 /* API Helpers */,
+				D75B76641AD057B100CF24A0 /* Constants.h */,
+				D75B76651AD057B100CF24A0 /* Constants.m */,
 			);
 			name = Utility;
 			path = "/Users/edwardlacap/Documents/ios workspace/ArtLust/ArtLust/Shared/Utility";
@@ -386,11 +401,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D75B76691AD0DF4100CF24A0 /* ArtWorkManager.m in Sources */,
 				D74D73661AB6D1110045C294 /* SecondViewController.m in Sources */,
+				D75B766F1AD1455800CF24A0 /* ArtWork.m in Sources */,
 				D703E3041AD036BE00A9CE42 /* ALObjectManager.m in Sources */,
 				D74D73641AB6D1110045C294 /* AppDelegate.m in Sources */,
 				D74D73651AB6D1110045C294 /* FirstViewController.m in Sources */,
 				D74D73621AB6D1110045C294 /* main.m in Sources */,
+				D75B76661AD057B100CF24A0 /* Constants.m in Sources */,
 				D73C9FA61AB728FF007E1958 /* ArtLust.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

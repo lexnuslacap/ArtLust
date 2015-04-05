@@ -7,6 +7,7 @@
 //
 
 #import "FirstViewController.h"
+#import "ArtWorkManager.h"
 
 @interface FirstViewController ()
 
@@ -17,6 +18,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    [[ArtWorkManager sharedManager] fetchAllArtWorks:^(NSArray *artWorks) {
+        NSLog(@"%@", artWorks);
+    } failure:^(RKObjectRequestOperation *operation, NSError *error) {
+        NSLog(@"%@", error.localizedDescription);
+    }];
 }
 
 - (void)didReceiveMemoryWarning {
